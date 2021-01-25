@@ -1,7 +1,7 @@
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
-  // @extend %width;
+  border-top: 1px solid $border-color-header;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;

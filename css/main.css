@@ -167,7 +167,6 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -1294,6 +1293,7 @@ ul {
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  border-top: 1px solid #ececec;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1396,6 +1396,12 @@ ul {
 @media screen and (min-width: 768px) {
   .projects-item {
     width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-item {
+    width: calc((100% - 90px) / 3);
   }
 }
 
