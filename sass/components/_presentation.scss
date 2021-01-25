@@ -8,6 +8,7 @@
 
 .presentation-wrap {
   @extend %container;
+  @extend %width;
 }
 
 .presentation-title {

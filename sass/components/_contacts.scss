@@ -1,19 +1,21 @@
 .contacts {
-  @media screen and (min-width: 768px) {
-    margin-left: 84px;
-    align-items: flex-start;
-  }
+  @extend %flex-column;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
 
-  @extend %flex-column;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    align-items: flex-start;
+  }
 
   @media screen and (min-width: 1200px) {
     @include centered-flex;
+    flex-direction: row;
+    margin-left: 305px;
   }
 
   .link {
@@ -22,10 +24,6 @@
     @extend %hover;
     @extend %transition;
     color: $text-color-primary;
-
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
 
     @media screen and (max-width: 767px) {
       font-weight: 500;
@@ -39,10 +37,19 @@
       line-height: 1.16;
     }
 
+    @media screen and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
     @media screen and (min-width: 1200px) {
       &:nth-child(2n) {
-        margin-left: 50px;
+        margin-left: 30px;
       }
+
+      font-size: 14px;
+      line-height: 1.14;
     }
   }
 
