@@ -416,13 +416,15 @@ ul {
   fill: currentColor;
 }
 
-.hero {
+.hero.background {
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 400px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -454,8 +456,15 @@ ul {
 
 .hero-content {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero .button {
@@ -496,7 +505,8 @@ ul {
 
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 93px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

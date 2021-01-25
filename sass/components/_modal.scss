@@ -13,7 +13,8 @@
   transition-property: opacity;
 
   @media screen and (max-width: 767px) {
-    padding: 93px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -34,6 +35,9 @@
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
+  }
+
+  @media screen and (max-width: 767px) {
   }
 
   @media screen and (min-width: 1200px) {
